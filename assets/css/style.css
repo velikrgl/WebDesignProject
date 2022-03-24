@@ -13,6 +13,7 @@ body {
   color: #444;
 }
 
+
 a {
   color: #4fa6d5;
   text-decoration: none;
@@ -56,6 +57,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   visibility: visible;
   opacity: 1;
 }
+
 
 /*--------------------------------------------------------------
 # Header
