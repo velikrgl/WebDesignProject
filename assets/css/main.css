@@ -1,10 +1,4 @@
 
-
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
 @font-face {
   font-family: Montserrat-Regular;
   src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
@@ -31,9 +25,6 @@
 }
 
 
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
 
 * {
 	margin: 0px; 
@@ -154,15 +145,12 @@ iframe {
 }
 
 
-/*//////////////////////////////////////////////////////////////////
-[ Utility ]*/
 
 .bg0 {background-color: #fff;}
 .bg1 {background-color: #f7f7f7;}
 
 
-/*//////////////////////////////////////////////////////////////////
-[ Contact ]*/
+
 
 .container-contact100 {
   width: 100%;  
@@ -189,9 +177,6 @@ iframe {
 }
 
 
-/*------------------------------------------------------------------
-[  ]*/
-
 .contact100-form {
   width: 100%;
   display: -webkit-box;
@@ -216,8 +201,7 @@ iframe {
 
 
 
-/*------------------------------------------------------------------
-[  ]*/
+
 
 .wrap-input100 {
   width: 100%;
@@ -274,8 +258,7 @@ textarea.input100 {
 }
 
 
-/*------------------------------------------------------------------
-[ Button ]*/
+
 .container-contact100-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -332,8 +315,7 @@ textarea.input100 {
   transform: translateX(10px);
 }
 
-/*------------------------------------------------------------------
-[ Responsive ]*/
+
 
 @media (max-width: 768px) {
   .rs1-wrap-input100 {
@@ -354,8 +336,6 @@ textarea.input100 {
 
 
 
-/*------------------------------------------------------------------
-[ Alert validate ]*/
 
 .validate-input {
   position: relative;
@@ -440,8 +420,7 @@ textarea.input100 {
 }
 
 
-/*==================================================================
-[ Restyle Select2 ]*/
+
 
 .select2-container {
   display: block;
@@ -463,8 +442,6 @@ textarea.input100 {
   position: relative;
 }
 
-/*------------------------------------------------------------------
-[ in select ]*/
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-family: Montserrat-SemiBold;
   font-size: 18px;
@@ -500,8 +477,7 @@ textarea.input100 {
 }
 
 
-/*------------------------------------------------------------------
-[ Dropdown option ]*/
+
 .select2-container--open .select2-dropdown {
   z-index: 1251;
   width: calc(100% + 2px);
@@ -573,8 +549,6 @@ textarea.input100 {
   width: calc(100% + 2px) !important;
 }
 
-/*==================================================================
-[ Restyle Radio ]*/
 .wrap-contact100-form-radio {
   width: 100%;
   padding: 15px 25px 0 25px;
@@ -645,8 +619,6 @@ textarea.input100 {
 }
 
 
-/*==================================================================
-[ rs NoUI ]*/
 .wrap-contact100-form-range {
   width: 100%;
   padding: 20px 25px 57px 25px;
