@@ -36,6 +36,42 @@ var pass=$("#password_id").val();
 
 }
 
+    //Validation PART
+    function ContactvalidateEmail() {
+        // get value of input email
+        var email = $("#contact_email_id").val();
+        // use reular expression
+        var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        if (reg.test(email)) {
+          return true;
+        } else {
+          return false;
+        }
+
+      }
+
+      $(document).ready(function () {
+
+        $("#contact_email_id").keyup(function () {
+          if (ContactvalidateEmail()) {
+            // if the email is validated
+            // set input email border green
+            $("#contact_email_id").css("border", "2px solid green");
+            // and set label 
+            $("#validate_email").html("<p class='text-success'>Validated</p>");
+          } else {
+            // if the email is not validated
+            // set border red
+            $("#contact_email_id").css("border", "2px solid red");
+            $("#validate_email").html("<p class='text-danger'>Invalid email</p>");
+          }
+
+        });
+
+
+
+      });
+
 
 $(document).ready(function () {
 
