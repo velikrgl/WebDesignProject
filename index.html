@@ -27,6 +27,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -40,7 +42,8 @@
 </head>
 
 <body>
-
+  
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex justify-content-between align-items-center">
@@ -212,7 +215,7 @@
                       </div>
 
                       <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                        <button type="submit" id="submit_button" class="btn btn-primary btn-lg">Register</button>
+                        <button type="button" id="submit_button" class="btn btn-primary btn-lg">Register</button>
                       </div>
 
                     </form>
@@ -232,6 +235,36 @@
       </div>
 
     </section>
+
+<script>
+
+$(document).ready(function () {
+
+  $("#submit_button").click(function(){
+
+  var name =$("#name_id").val();
+  
+  Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'User '+ name +' is registered successffully !',
+  showConfirmButton: false,
+  timer: 4500
+})  
+
+
+    
+});
+
+});
+
+
+
+
+
+
+</script>
+
 
   </main><!-- End #main -->
 

@@ -124,5 +124,9 @@ $("#repeat_pass_id").keyup(function(){
         buttonState();
     });
 
+//AJAX-Sweetalert signup
+
+
+
 
 });
