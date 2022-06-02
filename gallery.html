@@ -24,6 +24,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="/assets/js/search.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -61,6 +63,7 @@
 
     <!-- ======= Our Portfolio Section ======= -->
     <section class="breadcrumbs">
+      
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
@@ -75,19 +78,21 @@
     </section><!-- End Our Portfolio Section -->
 
     <!-- ======= Portfolio Section ======= -->
+    <button style="width: 80%;  margin-top: 50px;   margin-left: 125px;" type="button"  class="btn btn-primary" value="See Events " id="btnSearch">See Events</button>
     <section class="portfolio">
+     
+      
       <div class="container">
+        
 
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+        <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500"> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-            <div class="portfolio-item">
-              <img src="assets/img/activityphotos/activity11.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
+        
+            <div id="photos" class="portfolio-item-photos"></div>
+            
 
-          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
             <div class="portfolio-item">
               <img src="assets/img/activityphotos/activity22.jpg" class="img-fluid" alt="">
               
@@ -141,9 +146,9 @@
               <img src="assets/img/activityphotos/activity99.jpg" class="img-fluid" alt="">
              
             </div>
-          </div>
+          </div> -->
 
-        </div>
+        <!-- </div> -->
 
       </div>
     </section><!-- End Portfolio Section -->
@@ -226,6 +231,29 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
+  $(document).ready(function(){
+    var searchTerm;
+    $("#btnSearch").click(function() {
+        searchTerm = "sports";
+           
+            var url = "http://api.flickr.com/services/feeds/" +
+                "photos_public.gne?format=json&jsoncallback=?" +
+                "&tags=" + searchTerm + "&tagmode=all";
+
+            $.getJSON(url, function(data){
+                var html = "";
+                $.each(data.items, function(i, item){
+                    // html += "<h2>" + item.title + "</h2>";	
+                    html += "<img src=" + item.media.m + ">";
+                    // html += "<p><b>Tags: </b>" + item.tags + "</p>";
+                });
+                $("#photos").html(html);
+            });          
+        
+    });
+});
+</script>
 
 </body>
 
