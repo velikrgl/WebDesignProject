@@ -29,13 +29,15 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="assets/css/ajaxcontact.css" rel="stylesheet">
   <!--jquery-->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 
   <!--Validation for email and password-->
   <script src="assets/js/validate.js"> </script>
+  <script src="ajaxcontact.js"> </script>
+
 
 </head>
 
@@ -85,123 +87,59 @@
     </section><!-- End Our Team Section -->
 
     <!-- ======= Team Section ======= -->
+
+    
+  
+    
+    
     <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
       <div class="container">
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div style="    width: 100%;" class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
+              
               <div class="member-info">
-                <h4>Yusuf Yazıcı</h4>
-                <span>Chief Executive Officer</span>
-                <p>Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis
-                  aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non
-                  quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
+
+                <div class="row">
+                  <div class="col-lg">
+                    <header>
+                      <aside>
+                        <nav id="nav_list">
+                          <ul style="margin-top: 95px;">  
+                            <li  style="margin-bottom: 10px;"><a style="font-size: 32px; color: black;    font-family: revert; " href="#" title="yusuf">Yusuf Yazıcı</a></li>
+                            <li  style="margin-bottom: 10px;"><a style="font-size: 32px; color: black;     font-family: revert;"  href="#" title="aylin">Aylin Doğan</a></li>
+                            <li  style="margin-bottom: 10px;"><a style="font-size: 32px;  color: black;      font-family: revert; "  href="#" title="sude">Sude Kahraman</a></li>
+                            <li  style="margin-bottom: 10px;"><a style="font-size: 32px;  color: black;      font-family: revert; "  href="#" title="serhat">Serhat Dursun</a></li>
+                          </ul>
+                        </nav>
+                      </aside>
+                    </header>
+                  </div>
+                  <div class="col-lg">
+                    <main>
+                      <h1 style="font-size: 30px;    font-family: revert;">Executive Manager</h1>
+                      <img style="width: 350px;"src="assets/img/team/team-1.jpg" class="img-fluid" alt="" >
+                   
+                      <p style="font-family: cursive; margin-top: 15px; ">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis
+                        aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non
+                        quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>	
+                    </main>
+                  </div>
+                </div>
+               
+            
+              
+
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Aybüke Doğan</h4>
-                <span>Activity Manager</span>
-                <p>Aspernatur iste esse aliquam enim et corporis. Molestiae voluptatem aut eligendi quis aut. Libero vel
-                  amet voluptatem eos rerum non doloremque. Dolores eum non.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Serhat Dursun</h4>
-                <span>Coordinator</span>
-                <p>Ut enim possimus nihil cupiditate beatae. Veniam facere quae non qui necessitatibus rerum eos vero.
-                  Maxime sit sunt quo dolor autem est qui quaerat aliquid. Tenetur possimus qui enim.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Ayşe Kahraman </h4>
-                <span>Coordinator</span>
-                <p>Sint qui cupiditate. Asperiores fugit impedit aspernatur et mollitia. Molestiae qui placeat labore
-                  assumenda id qui nesciunt quo reprehenderit. Rem dolores similique quis soluta culpa enim quia ratione
-                  ea.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Orhan Sarı</h4>
-                <span>Advertiser</span>
-                <p>Aut ex esse explicabo quia harum ea accusamus excepturi. Temporibus at quia quisquam veritatis
-                  impedit. Porro laborum voluptatum sed necessitatibus a saepe. Deserunt laborum quasi consequatur
-                  voluptatum iusto sint qui fuga vel. Enim eveniet sed quibusdam rerum in. Non dicta architecto
-                  consequatur quo praesentium nesciunt.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Derya Bakan</h4>
-                <span>Intern</span>
-                <p>Amet labore numquam corrupti est. Nostrum amet voluptas consectetur dolor voluptatem architecto
-                  distinctio consequuntur eligendi. Quam impedit enim aut nesciunt aut dicta quam exercitationem.
-                  Reprehenderit exercitationem magnam. Ullam similique ut voluptas totam nobis porro accusamus nulla
-                  omnis.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-
       </div>
-    </section><!-- End Team Section -->
+    </section>
+
+    <!-- End Team Section -->
 
   </main><!-- End #main -->
   <!DOCTYPE html>
